@@ -22,11 +22,11 @@ class CIKScraper():
     
 
 
-# if __name__ == "__main__":
+if __name__ == "__main__":
 
-#     headers = {"User-Agent": "bxie43@wisc.edu"}
-    
-#     company = CIKScraper("CAG", headers)
-#     company.parsing_tickers()
-#     print(company.cik)
-#     print(company.company)
+    headers = {"User-Agent": "bxie43@wisc.edu"}
+    year = '2023'
+    FILE = '10-K'
+
+    company = CIKScraper("GIS", headers)[0]
+    company.parsing_tickers()
